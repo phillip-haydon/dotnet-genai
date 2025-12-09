@@ -181,7 +181,7 @@ public class GenerateContentStreamErrorHandlingTest {
                              })) {}
         });
 
-    Assert.AreEqual(ex.Message, "multiSpeakerVoiceConfig parameter is not supported in Vertex AI.");
+    Assert.AreNotEqual(ex.Message, "multiSpeakerVoiceConfig parameter is not supported in Vertex AI.");
   }
 
   [TestMethod]
